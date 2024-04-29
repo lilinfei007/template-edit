@@ -45,6 +45,14 @@ export default {
       projectList:localStorage('projectList') || []
     }
   },
+  mounted(){
+//     let obj = {
+//       component:() => import('@/views/Index.vue')
+//     }
+//     console.log(obj);
+// // console.log();
+//     console.log(require('@/views/Index.vue'));
+  },
   methods:{
     goEdit(item){
       window.open(`/project-edit?id=${item.id}`);

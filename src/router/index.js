@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/Home.vue'
 Vue.use(VueRouter)
-
 const routes = [
   {
     path: '/',
@@ -23,6 +22,10 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   }
 ]
+
+
+console.log("1111111111111111");
+console.log(routes)
 
 const router = new VueRouter({
   mode: 'history',
